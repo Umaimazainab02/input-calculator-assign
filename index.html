@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator simple</title>
 </head>
 
-<body class="flex justify-center">
-    <div class="flex flex-col border-4 border-green-900 bg-emerald-400 h-100 w-100 mt-30">
-        <h1 class="text-2xl font-bold bg-green-900 text-white px-5 items-center pl-35 py-4">Calculator</h1>
+<body class="flex justify-center  bg-cover bg-center bg-no-repeat min-h-screen">    
+
+    <div class="flex flex-col border-4 border-gray-500  bg-white h-120 w-75 lg:w-100 mt-30 rounded-2xl " id="">
+        <h1 class="text-2xl font-bold bg-gray-600 text-white px-5 items-center pl-23 lg:pl-35 py-4 rounded-t-xl">Calculator</h1>
         <div class="  mt-5 ml-10">
-            <h1 class="text-xl font-bold mb-2">Input 1</h1>
-        <input type="number" id="num1" placeholder="" class="border-3 border-green-900 w-70 h-12">
+            <h1 class="text-md lg:text-xl  font-bold mb-2" >Input 1</h1>
+            <input type="number" id="num1" placeholder="" class="border-3 border-gray-900 w-50 lg:w-70 h-12">
         </div>
         <div class=" mt-2 ml-10">
-        <h1 class="text-xl font-bold mb-2">Input 2</h1>
-        <input type="number" id="num2" placeholder="" class="border-3 border-green-900 w-70 h-12 ">
+            <h1 class="text-md lg:text-xl font-bold mb-2">Input 2</h1>
+            <input type="number" id="num2" placeholder="" class="border-3 border-gray-900 w-50 lg:w-70 h-12 ">
         </div>
-<div class="mt-6">
-        <button id="add" class="bg-red-600 rounded-3xl w-20 h-10 ml-7">Add</button>
-        <button id="sub" class="bg-green-600 rounded-3xl w-20 h-10">Subtract</button>
-        <button id="mul" class="bg-blue-600 rounded-3xl w-20 h-10">Multiply</button>
-        <button id="div" class="bg-yellow-600 rounded-3xl w-20 h-10">Divide</button>
-</div>
-        <button id="result" class="border-4 border-amber-50 bg-green-600 hover:bg-yellow-600 w-35 h-10 rounded-2xl ml-33 mt-6 ">Result: </button>
+        <div class="mt-6">
+            <button id="add" class="bg-gray-400  rounded-3xl w-15 lg:w-20 h-15 lg:h-20 ml-7 text-2xl font-bold">+</button>
+            <button id="sub" class="bg-gray-400 rounded-3xl w-15 lg:w-20 h-15 lg:h-20 text-2xl font-bold">-</button>
+            <button id="mul" class="bg-gray-400 rounded-3xl w-15 lg:w-20 h-15 lg:h-20 text-2xl font-bold">*</button>
+            <button id="div" class="bg-gray-400 rounded-3xl w-15 lg:w-20 h-15 lg:h-20 text-2xl font-bold">/</button>
+        </div>
+        <button id="result"
+            class="border-4  border-amber-50 bg-gray-400 hover:bg-gray-600 transition duration-300 w-35 h-10 rounded-2xl ml-20 lg:ml-33 mt-6 font-bold">Result:
+        </button>
     </div>
-    <script src="app.js"></script>
+    <script src="first.js"></script>
 
 
 </body>
